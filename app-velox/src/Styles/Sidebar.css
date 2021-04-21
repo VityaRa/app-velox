@@ -1,0 +1,34 @@
+.sidebar{
+  background-color: #003B72;
+  width: 190px;
+  min-height: 768px;
+}
+.logo{
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+.apply-btn{
+  font-size: 14px;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #7761FF;
+  color: white;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.help-ref{
+  margin-top: 307px;
+  margin-bottom: 0 !important;
+}
+.help-ref, .logo, .bottom__logo {
+  padding-left: 20px;
+}
+.bottom__logo{
+  margin-top: 5px;
+}

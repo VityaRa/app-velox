@@ -1,0 +1,44 @@
+.list__item .list__icon path{
+  fill: #fff;
+}
+.list__item{
+  padding-left: 20px;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 45px;
+  margin-top: 10px;
+  transition: .2s;
+}
+.list__item:last-child{
+  margin-bottom: 10px;
+}
+.list__item a{
+  color: white;
+  font-size: 14px;
+  display: flex;
+}
+.list__item a p{
+  padding-left: 14px;
+}
+.list__item:hover{
+  background-color: white;
+  border-left: 4px solid #7761FF;
+}
+.list__item:hover path{
+  fill: #7761FF;
+}
+.list__item:hover a{
+  color: #7761FF;
+}
+.list__item__active{
+  background-color: white;
+  border-left: 4px solid #7761FF;
+}
+.list__item__active a{
+  color: #7761FF;
+}
+.list__item__active path{
+  fill: #7761FF !important;
+}
