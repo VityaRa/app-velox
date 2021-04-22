@@ -5,9 +5,8 @@ import Header from './Components/Header'
 
 function PersonalCabinet() {
   return (
-    <div className="PersonalCabinet">
+    <div className="personalCabinet">
       <Sidebar></Sidebar>
-      <Header></Header>
       <MainWindow>
       </MainWindow>
 
