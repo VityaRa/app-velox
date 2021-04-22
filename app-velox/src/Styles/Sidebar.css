@@ -1,6 +1,6 @@
 .sidebar{
   background-color: #003B72;
-  width: 190px;
+  min-width: 190px;
   min-height: 768px;
 }
 .logo{
