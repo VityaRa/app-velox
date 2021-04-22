@@ -55,6 +55,11 @@
 .appointment__item__remove-btn{
   width: 100px;
   height: 40px;
+  cursor: pointer;
+  transition: .3s;
+}
+.appointment__item__remove-btn:hover{
+  background-color: blueviolet;
 }
 .appointment__item__doctor{
   display: flex;
