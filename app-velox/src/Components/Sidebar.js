@@ -1,6 +1,7 @@
 import SidebarList from "./SidebarList";
 import "../Styles/Sidebar.css";
 import "../Styles/SidebarList.css";
+import "../Styles/SharedStyles.css";
 import company__logo from '../images/appvelox__logo.png'
 
 function Sidebar() {
@@ -8,7 +9,7 @@ function Sidebar() {
     <div className="sidebar">
       <h2 className="logo">Логотип</h2>
       <SidebarList></SidebarList>
-      <button className="apply-btn">Подать заявку</button>
+      <button className="btn sidebar__btn">Подать заявку</button>
       <div className="help-ref list__item">
       <a href="#" >
         <svg
