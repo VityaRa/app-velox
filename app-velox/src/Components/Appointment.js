@@ -1,4 +1,5 @@
 import AppointmentList from "./AppointmentList";
+import ReactCalendar from "./Calendar";
 import "../Styles/Appointment.css";
 import "../Styles/SharedStyles.css";
 
@@ -31,12 +32,17 @@ function Appointment(props) {
         ) : ("Мои записи"
         )}
       </h3>
-      <AppointmentList
-        isPressed={props.isPressed}
-        changePress={props.changePress}
-        doctors={doctorsList}
-        removeDoctor={props.removeDoctor}
-      ></AppointmentList>
+      <div style={{display: "flex"}}>
+        <AppointmentList
+          isPressed={props.isPressed}
+          changePress={props.changePress}
+          doctors={doctorsList}
+          removeDoctor={props.removeDoctor}
+        ></AppointmentList>
+        {props.isPressed ? <ReactCalendar style={{borderRadius: "5px", overflow: "hidden"}}  ></ReactCalendar> : null}
+        
+      </div>
+
     </section>
   );
 }

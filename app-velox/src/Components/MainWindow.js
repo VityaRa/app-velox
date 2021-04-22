@@ -25,7 +25,7 @@ function MainWindow() {
       day: "15.06.20",
       time: "15:30",
       place: `СПБ ГБУЗ "Городская поликлиника №25", пр. Солидарности, д. 1, к. 1, лит. А`,
-      name: "Харьков В. С.",
+      name: "2",
       type: "Терапевтическое отделение",
       imageURL:
         "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
@@ -36,7 +36,7 @@ function MainWindow() {
       day: "15.06.20",
       time: "15:30",
       place: `СПБ ГБУЗ "Городская поликлиника №25", пр. Солидарности, д. 1, к. 1, лит. А`,
-      name: "Харьков В. С.",
+      name: "3",
       type: "Терапевтическое отделение",
       imageURL:
         "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
@@ -47,7 +47,7 @@ function MainWindow() {
       day: "15.06.20",
       time: "15:30",
       place: `СПБ ГБУЗ "Городская поликлиника №25", пр. Солидарности, д. 1, к. 1, лит. А`,
-      name: "Харьков В. С.",
+      name: "4",
       type: "Терапевтическое отделение",
       imageURL:
         "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
@@ -58,7 +58,7 @@ function MainWindow() {
       day: "15.06.20",
       time: "15:30",
       place: `СПБ ГБУЗ "Городская поликлиника №25", пр. Солидарности, д. 1, к. 1, лит. А`,
-      name: "Харьков В. С.",
+      name: "5",
       type: "Терапевтическое отделение",
       imageURL:
         "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
@@ -69,13 +69,17 @@ function MainWindow() {
       day: "15.06.20",
       time: "15:30",
       place: `СПБ ГБУЗ "Городская поликлиника №25", пр. Солидарности, д. 1, к. 1, лит. А`,
-      name: "Харьков В. С.",
+      name: "6",
       type: "Терапевтическое отделение",
       imageURL:
         "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
     },
   ]);
-  const removeDoctor = (removeIndex) => actionDoctor(prevList => prevList.splice(removeIndex, 1))
+  const removeDoctor = (e) =>
+    actionDoctor((prevList) => {
+      let deleteIndex = e.target.getAttribute("index")
+      return prevList.filter((elem, index) => index != deleteIndex)
+    });
 
   return (
     <div className="mainWindow">

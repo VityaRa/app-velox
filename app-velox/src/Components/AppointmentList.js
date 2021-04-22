@@ -8,14 +8,14 @@ function AppointmentList(props) {
       {
         !props.isPressed ? 
         (info.filter((doctor, index) => index <= 1) 
-              .map((doctor) => (<AppointmentItem removeDoctor={props.removeDoctor} key={doctor.id.toString()} doctorInfo={doctor} />))) :
-        (info.map((doctor) => (<AppointmentItem removeDoctor={props.removeDoctor} key={doctor.id.toString()} doctorInfo={doctor} />)))
+              .map((doctor, index) => (<AppointmentItem removeDoctor={props.removeDoctor} key={doctor.id} id={index} doctorInfo={doctor} />))) :
+        (info.map((doctor, index) => (<AppointmentItem removeDoctor={props.removeDoctor} key={doctor.id} id={index}  doctorInfo={doctor} />)))
       }
 
       { !props.isPressed ? (
         <div className="appointment__more">
         <span className="appointment__applies">
-          Еще {info.length - 2} записи
+          Еще {info.length - 2 >= 0 ? info.length - 2 : 0} записи
         </span>
         <a href="#" className="appointment__about" onClick={props.changePress}>
           Подробнее
