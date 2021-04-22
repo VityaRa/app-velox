@@ -22,8 +22,8 @@ abbr{
   padding: 0 !important;
   padding-bottom: 1em !important;
   text-align: left !important;
-  padding-left: 5px !important;
-  padding-top: 5px !important;
+  padding-left: 10px !important;
+  padding-top: 10px !important;
 }
 .react-calendar__navigation__arrow{
   font-size: 20px;
