@@ -6,7 +6,7 @@ function AppointmentItem(props) {
   const doctorInfo = props.doctorInfo
   return (
     <li className="appointment__item">
-      <span className="appointment__item__time">{doctorInfo.date}</span>
+      <span className="appointment__item__time">{`${doctorInfo.dayOfWeek} ${doctorInfo.day} | ${doctorInfo.time}`}</span>
       <span className="appointment__item__place">{doctorInfo.place}</span>
       <div className="appointment__item__doctor">
         <div className="appointment__item__doctor__about">
