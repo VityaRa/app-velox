@@ -1,0 +1,19 @@
+.mainWindow{
+  width: 100%;
+}
+header{
+  height: 55px;
+  background-color: #50CAFF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+h2{
+  color: white;
+  font-weight: normal;
+  font-size: 28px;
+  padding-left: 40px;
+}

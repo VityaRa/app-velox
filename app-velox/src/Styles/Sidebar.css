@@ -11,16 +11,9 @@
   display: flex;
   align-items: center;
 }
-.apply-btn{
-  font-size: 14px;
+.sidebar__btn{
   width: 150px;
   height: 40px;
-  border-radius: 5px;
-  border: 0px;
-  background-color: #7761FF;
-  color: white;
-  font-weight: 600;
-  margin-left: 20px;
 }
 .help-ref{
   margin-top: 307px;

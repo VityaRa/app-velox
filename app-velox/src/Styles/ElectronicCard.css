@@ -1,0 +1,62 @@
+
+
+.elec-block__list{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+}
+.elec__item:hover .elec__info__container hr{
+  border: 1px solid #50CAFF;
+}
+.elec__item:hover .elec__logo__container{
+  background-color: #50CAFF;
+}
+.elec__item:hover li.elec__info__list__item::marker{
+  color: #50CAFF;
+}
+.elec__item:hover {
+  border: 2px solid #50CAFF;
+}
+
+.elec__item{
+  box-sizing: border-box;
+  width: 540px;
+  height: 183px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #EBE7FF;
+  display: flex;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.elec__logo__container{
+  height: 100%;
+  width: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elec__logo{
+  height: 50px;
+  width: 50px;
+}
+.elec__info__container{
+  width: 407px;
+  padding: 30px;
+}
+.elec__info__title{
+  font-size: 28px;
+  font-weight: normal;
+}
+.elec__info__container hr{
+  margin: 8px 0 15px 0;
+  border: 1px solid #EBE7FF;
+}
+.elec__info__list__item{
+  margin-bottom: 7px;
+  list-style: disc inside;
+}
+li.elec__info__list__item::marker {
+  color: #EBE7FF;
+}
