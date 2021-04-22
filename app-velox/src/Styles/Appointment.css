@@ -2,8 +2,13 @@
 .appointment__list{
   margin-top: 3px;
   display: flex;
-  margin-bottom: 20px;
+  max-height: 644px;
 }
+.appointment__list::-webkit-scrollbar-track {border-radius: 4px; background-color: #EBE7FF;}
+.appointment__list::-webkit-scrollbar {width: 6px;}
+.appointment__list::-webkit-scrollbar-thumb {border-radius: 4px;background: #003B72;}
+.appointment__list:hover::-webkit-scrollbar-thumb {background: rgb(127, 101, 255);}
+
 .appointment__item__time, .appointment__item__place, .appointment__item__doctor__info__name, .appointment__item__doctor__info__type{
   display: block;
 
@@ -14,6 +19,7 @@
   height: 175px;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 #EBE7FF;
+  margin-bottom: 25px;
 }
 .appointment__item__time{
   font-size: 16px;
