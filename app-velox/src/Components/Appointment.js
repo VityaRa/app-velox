@@ -35,6 +35,7 @@ function Appointment(props) {
         isPressed={props.isPressed}
         changePress={props.changePress}
         doctors={doctorsList}
+        removeDoctor={props.removeDoctor}
       ></AppointmentList>
     </section>
   );

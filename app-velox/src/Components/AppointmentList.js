@@ -8,8 +8,8 @@ function AppointmentList(props) {
       {
         !props.isPressed ? 
         (info.filter((doctor, index) => index <= 1) 
-              .map((doctor) => (<AppointmentItem key={doctor.id.toString()} doctorInfo={doctor} />))) :
-        (info.map((doctor) => (<AppointmentItem key={doctor.id.toString()} doctorInfo={doctor} />)))
+              .map((doctor) => (<AppointmentItem removeDoctor={props.removeDoctor} key={doctor.id.toString()} doctorInfo={doctor} />))) :
+        (info.map((doctor) => (<AppointmentItem removeDoctor={props.removeDoctor} key={doctor.id.toString()} doctorInfo={doctor} />)))
       }
 
       { !props.isPressed ? (

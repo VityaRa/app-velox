@@ -16,7 +16,7 @@ function AppointmentItem(props) {
             <span className="appointment__item__doctor__info__type">{doctorInfo.type}.</span>
           </div>
         </div>
-        <button className="btn appointment__item__remove-btn">Отменить</button>
+        <button onClick={props.removeDoctor} className="btn appointment__item__remove-btn">Отменить</button>
       </div>
     </li>
   );

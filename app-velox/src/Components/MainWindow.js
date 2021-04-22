@@ -5,6 +5,8 @@ import Header from "./Header";
 
 function MainWindow() {
   const [isPressed, setPress] = React.useState(false);
+  const changePress = () => setPress((press) => !press);
+
   const [doctorsList, actionDoctor] = React.useState([
     {
       id: 1,
@@ -73,7 +75,8 @@ function MainWindow() {
         "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
     },
   ]);
-  const changePress = () => setPress((press) => !press);
+  const removeDoctor = (removeIndex) => actionDoctor(prevList => prevList.splice(removeIndex, 1))
+
   return (
     <div className="mainWindow">
       <Header></Header>
@@ -81,6 +84,7 @@ function MainWindow() {
         isPressed={isPressed}
         changePress={changePress}
         doctorsList={doctorsList}
+        removeDoctor={removeDoctor}
       ></Appointment>
       {!isPressed ? <ElectronicCard></ElectronicCard> : null}
     </div>
