@@ -79,3 +79,7 @@
   text-decoration: underline !important;
   color: #50CAFF;
 }
+.appointment__item__doctor__about img{
+  height: 60px;
+  width: 60px;
+}
