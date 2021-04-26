@@ -17,7 +17,7 @@ function MainWindow() {
       name: "Малушко Т. Н.",
       type: "Хирургия",
       imageURL:
-        "https://cdn1.savepice.ru/uploads/2021/4/22/a375bc422f0604858a42b582f59c4983-full.png",
+        "https://thumbs2.imgbox.com/82/76/lKxHVjI7_t.png",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ function MainWindow() {
       name: "2",
       type: "Терапевтическое отделение",
       imageURL:
-        "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
+        "https://thumbs2.imgbox.com/19/ae/oFcWkOsM_t.png",
     },
     {
       id: 3,
@@ -39,7 +39,8 @@ function MainWindow() {
       name: "3",
       type: "Терапевтическое отделение",
       imageURL:
-        "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
+        "https://thumbs2.imgbox.com/19/ae/oFcWkOsM_t.png",
+
     },
     {
       id: 4,
@@ -50,7 +51,8 @@ function MainWindow() {
       name: "4",
       type: "Терапевтическое отделение",
       imageURL:
-        "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
+        "https://thumbs2.imgbox.com/19/ae/oFcWkOsM_t.png",
+
     },
     {
       id: 5,
@@ -61,7 +63,8 @@ function MainWindow() {
       name: "5",
       type: "Терапевтическое отделение",
       imageURL:
-        "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
+        "https://thumbs2.imgbox.com/19/ae/oFcWkOsM_t.png",
+
     },
     {
       id: 6,
@@ -72,7 +75,8 @@ function MainWindow() {
       name: "6",
       type: "Терапевтическое отделение",
       imageURL:
-        "https://cdn1.savepice.ru/uploads/2021/4/22/f00a8ce34d47f4bc8736aa5b91208c00-full.png",
+        "https://thumbs2.imgbox.com/19/ae/oFcWkOsM_t.png",
+
     },
   ]);
   const removeDoctor = (e) =>
